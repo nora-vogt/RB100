@@ -1,10 +1,8 @@
-# Exercise 1
+# Exercise 4 - modifies exercise 1
+puts "What is your first name?"
+first_name = gets.chomp
 
-puts "What is your name?"
-name = gets.chomp
+puts "What is your last name?"
+last_name = gets.chomp
 
-puts "Hello, #{name}!"
-
-# Exercise 3
-
-10.times { puts name }
+puts "Hello #{first_name} #{last_name}!"
