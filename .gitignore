@@ -3,3 +3,8 @@ intro-ruby-book/methods/say.rb
 intro-ruby-book/the-basics/scope.rb
 intro-ruby-book/methods/mutate.rb
 intro-ruby-book/methods/return.rb
+intro-ruby-book/flow-control/case_statement.rb
+intro-ruby-book/flow-control/case_with_no_arg_statement.rb
+intro-ruby-book/flow-control/conditional.rb
+intro-ruby-book/flow-control/examples.rb
+
