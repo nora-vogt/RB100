@@ -1,3 +1,5 @@
 .DS_Store
 intro-ruby-book/methods/say.rb
 intro-ruby-book/the-basics/scope.rb
+intro-ruby-book/methods/mutate.rb
+intro-ruby-book/methods/return.rb
