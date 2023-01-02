@@ -1,16 +1,16 @@
 What do the following expressions evaluate to? That is, what value does each expression return?
 
-1. x = 2
-  => 2
+1. x = 2  # Variable assignment returns the value assigned.
+  => 2    
 
-2. puts x = 2
+2. puts x = 2   # puts will output the value of the assignment, but returns nil.
   => nil
 
-3. p name = "Joe"
+3. p name = "Joe"   # Assigning variable name to string "Joe". p will output its argument, then return argument
   => "Joe"
 
 4. four = "four"
   => "four"
 
-5. print something = "nothing"
+5. print something = "nothing"  # print will output return value of assignment, then return nil. both will be on same line.
   => nil
