@@ -7,4 +7,18 @@ intro-ruby-book/flow-control/case_statement.rb
 intro-ruby-book/flow-control/case_with_no_arg_statement.rb
 intro-ruby-book/flow-control/conditional.rb
 intro-ruby-book/flow-control/examples.rb
+intro-ruby-book/loops-iterators/conditional_loop.rb
+intro-ruby-book/loops-iterators/conditional_while_loop.rb
+intro-ruby-book/loops-iterators/conditional_while_loop_with_break.rb
+intro-ruby-book/loops-iterators/conditional_while_loop_with_next.rb
+intro-ruby-book/loops-iterators/countdown.rb
+intro-ruby-book/loops-iterators/countdown3.rb
+intro-ruby-book/loops-iterators/countdown4.rb
+intro-ruby-book/loops-iterators/fibonacci.rb
+intro-ruby-book/loops-iterators/loop_example.rb
+intro-ruby-book/loops-iterators/next_loop.rb
+intro-ruby-book/loops-iterators/perform_again.rb
+intro-ruby-book/loops-iterators/practice_each.rb
+intro-ruby-book/loops-iterators/useful_loop.rb
+
 
