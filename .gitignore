@@ -20,5 +20,7 @@ intro-ruby-book/loops-iterators/next_loop.rb
 intro-ruby-book/loops-iterators/perform_again.rb
 intro-ruby-book/loops-iterators/practice_each.rb
 intro-ruby-book/loops-iterators/useful_loop.rb
+intro-ruby-book/hashes/iterating_over_hashes.rb
+intro-ruby-book/hashes/optional_parameteres.rb
 
 
