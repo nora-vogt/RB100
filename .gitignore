@@ -22,5 +22,16 @@ intro-ruby-book/loops-iterators/practice_each.rb
 intro-ruby-book/loops-iterators/useful_loop.rb
 intro-ruby-book/hashes/iterating_over_hashes.rb
 intro-ruby-book/hashes/optional_parameteres.rb
+intro-ruby-book/more-stuff/boolean_matchdata.rb
+intro-ruby-book/more-stuff/boolean_regex.rb
+intro-ruby-book/more-stuff/divide.rb
+intro-ruby-book/more-stuff/exception_example.rb
+intro-ruby-book/more-stuff/greeting.rb
+intro-ruby-book/more-stuff/inline_exception_example.rb
+intro-ruby-book/more-stuff/order.rb
+intro-ruby-book/more-stuff/passing_block.rb
+intro-ruby-book/more-stuff/passing_proc.rb
+intro-ruby-book/more-stuff/proc_example.rb
+
 
 
