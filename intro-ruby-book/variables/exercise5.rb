@@ -12,4 +12,4 @@ y = 0
   x = y
 end
 puts x
-# This will cause an "undefine local variable or method" error because the variable 'x' was initialized inside of the block. The puts method is being called in outer scope, and does not have access to the inner scope of the block where 'x' was declared. Put another way - the outer scope doesn't know about the variable 'x' when outside of the block. 
+# This will cause an "undefine local variable or method" error because the variable 'x' was initialized inside of the block, and is not available to the scope outside of the block. 
