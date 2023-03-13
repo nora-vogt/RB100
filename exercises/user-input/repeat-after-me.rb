@@ -1,4 +1,4 @@
-puts "Please enter a message:"
-message = gets.chomp
+puts ">> Type anything you want:"
+input = gets.chomp
 
-puts message
+puts input
