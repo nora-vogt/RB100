@@ -35,7 +35,6 @@ loop do
 
   if denominator == '0'
     puts ">> Invalid input. A denominator of 0 is not allowed."
-    next
   elsif valid_number?(denominator)
     break
   else
