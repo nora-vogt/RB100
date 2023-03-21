@@ -3,7 +3,11 @@
   # prints a string containing the values of both arguments
 
 def car(make, model)
-  puts "#{make} #{model}"
+  "#{make} #{model}"
 end
 
-car('Toyota', 'Corolla')
+puts car('Toyota', 'Corolla')
+
+# Before modification (with a #puts call in the car method), the car method returned nil, because puts returns nil. 
+
+# Now, the car method will return a string interpolated with whatever values are passed to the parameters make and model ('Toyota Corolla').
