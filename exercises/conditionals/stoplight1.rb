@@ -5,6 +5,6 @@ case stoplight
     puts "Go!"
   when 'yellow'
     puts "Slow down!"
-  when 'red'
+  else  # don't need to explicitly compare to 'red' with another when; can use else
     puts "Stop!"
 end
