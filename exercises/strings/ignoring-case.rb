@@ -1,13 +1,15 @@
 name = 'Roger'
 
-if name.casecmp?('RoGeR')
-  puts "true"
-else
- puts "false"
-end
+#casecmp? is case-insensitive; returns true, false, or nil if not a string
+puts name.casecmp?('RoGeR') # returns true
+puts name.casecmp?('DAVE')  # returns false
 
-if name.casecmp?('DAVE')
-  puts "true"
-else
-  puts "false"
-end
+#casecmp is a case-insensitive version of String#<=>, returns -1, 0, 1, or nil
+puts name.casecmp('RoGeR') == 0 
+# name.casecmp('RoGeR') returns 0, strings match when case insensitive
+
+puts name.casecmp('DAVE') == 0
+# name.casecmp('DAVE') returns 1
+
+puts name.casecmp('Zepplin') 
+# name.casecmp('Zepplin') returns -1
