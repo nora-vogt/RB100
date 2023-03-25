@@ -9,7 +9,7 @@ puts name.casecmp('RoGeR') == 0
 # name.casecmp('RoGeR') returns 0, strings match when case insensitive
 
 puts name.casecmp('DAVE') == 0
-# name.casecmp('DAVE') returns 1
+# name.casecmp('DAVE') returns 1. the value of the calling string (name) is greater than the argument provided ('DAVE').
 
 puts name.casecmp('Zepplin') 
-# name.casecmp('Zepplin') returns -1
+# name.casecmp('Zepplin') returns -1. the value of the calling string name is less than the argument provided ('Zepplin'). 
