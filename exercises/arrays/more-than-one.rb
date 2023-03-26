@@ -4,7 +4,10 @@ my_pets = pets.select {|pet| pet == 'fish' || pet == 'lizard'}
 
 puts "I have a pet #{my_pets.first} and a pet #{my_pets.last}!"
 
+# Or, using Array#[]
+# my_pets = pets[2..3]
+# puts "I have a pet #{my_pets[0]} and a pet #{my_pets[1]}!"
 
-# select fish and lizard at the same time
-# assign the return value to a variable named my_pets
-# print contents of my_pets as a single string
+# Or, Array#[] - ary[start, length] → new_ary or nil
+# my_pets = pets[2, 2]  # returns ['fish', 'lizard']
+# # puts "I have a pet #{my_pets[0]} and a pet #{my_pets[1]}!"
