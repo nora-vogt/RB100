@@ -7,5 +7,5 @@ car = {
 car[:year] = 2003
 
 #takeaway:
-  # use element assignment Hash[]= to add a new key value pair to a hash, or modify an existing value
+  # use element assignment Hash[]= to add a new key value pair to a hash, or modify an existing value if the specified key already exists
   # hash[key] = value
