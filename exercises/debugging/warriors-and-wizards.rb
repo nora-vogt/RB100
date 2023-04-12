@@ -14,9 +14,11 @@ character_classes = {
 puts 'Please type your class (warrior, thief, scout, mage):'
 input = gets.chomp.downcase.to_sym
 
-player.merge(character_classes[input])    # This is raising an error, because the variable input currently references a String object with the user's character class, while the hash keys has classes as symbols. When referencing a hash key that doesn't exist (for example, the string 'warrior'), nil will be returned. 
+player.merge!(character_classes[input])    # This is raising an error, because the variable input currently references a String object with the user's character class, while the hash keys are symbols. When referencing a hash key that doesn't exist (for example, character_classes['warrior']), nil will be returned. 
 
 # To fix this, we need to conver the user's input to a symbol by chaining #to_sym. 
+
+# We also need to call #merge! instead of #merge, becase #merge returns a new hash, while #merge! destructively overwrites the calling hash.
 
 puts 'Your character stats:'
 puts player
