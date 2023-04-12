@@ -6,7 +6,7 @@ things.shuffle!
 
 i = 0
 loop do
-  break if i == things.length
+  break if i == colors.length || i == things.length
 
   if i == 0
     puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
@@ -26,3 +26,5 @@ end
 # To fix this, we can change the break conditional to break if i is equal to the length of the colors array. 
   # -- This didn't work, didn't notice that the things array has one less element than the colors array, so things[i] will be nil on the last iteration.
   # Instead, change the conditional to break if i is equal to the length of the things array.
+
+  # Further exploration: we can use an OR to ensure the loop breaks when i is equal to the length of the shorter array, allowing the array sizes to change.
