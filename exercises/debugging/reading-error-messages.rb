@@ -16,3 +16,4 @@ end
 find_first_nonzero_among(1)
 # Before running code:
   # This will raise a NoMethodError on line 4, when the #each method is called on the numbers local variable. When calling the method on line 15, we are passing in the integer 1 to be represented by the numbers local variable inside the method. #each can't be called on an integer, raising the error. 
+    # Note: language is "the parameter number is now bound to the provided argument 1"
