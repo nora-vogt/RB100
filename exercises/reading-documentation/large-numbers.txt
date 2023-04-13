@@ -1,0 +1,9 @@
+docs.ruby-lang.org/en/ > choose core API for desired verson > Literals > Numbers
+
+In Ruby, an underscore may be used in a number to make it easier to read. You may use underscores in both Integer and Float numbers. 
+
+For example: 
+987654 == 987_654
+
+Further Exploration:
+Yes, the number 1_987_654_321 may also be written as 19_87_65_4321. This is the same number to Ruby. Where you place underscores depends on the information you want to convey with the number.

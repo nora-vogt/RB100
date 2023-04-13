@@ -1,0 +1,7 @@
+www.ruby-doc.org 
+(used to be primary source)
+
+OR 
+
+docs.ruby-lang.org
+(more recent preferred choice)

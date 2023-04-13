@@ -1,0 +1,1 @@
+while loops return nil, unless the break keyword is used. If break is used, the value passed to break is the while loop's return value.

@@ -1,0 +1,5 @@
+docs.ruby-lang.org/en/ > choose core API version > Literals > Symbols
+https://docs.ruby-lang.org/en/2.7.0/syntax/literals_rdoc.html#label-Symbols
+
+In Ruby, a Symbol is denoted by a colon - 
+:nora

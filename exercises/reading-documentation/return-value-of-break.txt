@@ -1,0 +1,8 @@
+docs.ruby-lang.org/en > choose core API version > Control Expressions > break Statement
+
+https://docs.ruby-lang.org/en/2.7.0/syntax/control_expressions_rdoc.html#label-break+Statement
+
+
+The break keyword accepts an argument, and the value of the argument becmes the return value of the while loop. 
+
+If no value is passed to break, it returns nil. 

@@ -1,0 +1,13 @@
+docs.ruby-lang.ord/en/ > choose core API version  > Class and Module Index list > String
+
+https://docs.ruby-lang.org/en/2.7.0/String.html
+
+Can also find by utilizing search bar.
+
+Under Methods list in left sidebar, all Class and Instance methods available to the String class. 
+
+Class methods: ::class_method
+  Ex: String::new
+  
+Instance methods: #instance_method
+  Ex: String#downcase
