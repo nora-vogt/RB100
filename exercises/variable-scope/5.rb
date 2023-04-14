@@ -8,3 +8,5 @@ p my_value(a) # returns 'yzzyX'
 puts a  # prints "Xyzzy"
 
 # When the my_value method is invoked, the variable local to the method 'b' is initially bound to the same String object that 'a' references. On line 4 of the method, variable reassignment takes place, which binds the variable local to the method 'b' to a new String object. The local variable 'a' initialized on line 1 is unaffected by reassigning 'b', and line 8 will print "Xyzzy".
+
+# Note from solution: Variable reassignment never mutates the object that is referenced - it creates a new object. 
