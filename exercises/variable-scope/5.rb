@@ -1,10 +1,10 @@
 a = "Xyzzy"
 
-def my_value(b)
-  b = 'yzzyX'  # variable reassignment, because local var b is pointing to the same String object as local var 'a' on line 1
+def my_value(b) # initially when invoked, b points to the same String object as a
+  b = 'yzzyX'   # this is variable reassignment; b now points to a new String object
 end
 
-my_value(a)  # returns 'yzzyX'
-puts a # prints "Xyzzy"
+p my_value(a) # returns 'yzzyX'
+puts a  # prints "Xyzzy"
 
-# Variable reassignment does not mutate the original object, but points the variable to a new object in memory. In this case, though the local var 'b' is initially pointing at the same String object as local var 'a' when the method is called on line 7, the reassignment points 'b' to a new string object 'yzzyX'.
+# When the my_value method is invoked, the variable local to the method 'b' is initially bound to the same String object that 'a' references. On line 4 of the method, variable reassignment takes place, which binds the variable local to the method 'b' to a new String object. The local variable 'a' initialized on line 1 is unaffected by reassigning 'b', and line 8 will print "Xyzzy".
