@@ -1,10 +1,12 @@
 a = 7
 
-def my_value(b)
-  b = a + a
+def my_value(b)   # initially when method is called, b points to 7
+  b = a + a     # variable reassignment; but this will raise an error 
 end
 
-my_value(a)  # throws an unidentified local var 'a' error!
-puts a  # won't print, because the program exits when encountering the exception
+my_value(a) 
+puts a    
 
-# This method will throw an an unidentified local var 'a' error! Methods have self-contained scope, so the method definition for my_value does not directly have access to the local var 'a' initialized on line 1. Line 4 tries to use that var 'a', but because no variable called 'a' has been initialized inside the method definition, an error will occur. 
+# Nothing will be output by this code because an error will be raised by line 4 of the my_value method. Methods have self-contained scope, and variables initialized outside the method are not accessible from within the method body. 
+
+# Line 4 of the method can't access the a initialized on line 1, and there is also no variable local to the method named 'a' that has been initalized, so this will raise an error.
