@@ -1,19 +1,14 @@
 a = "Xyzzy"
 
 def my_value(b)
-  b[2] = '-'  # String[]= is a mutating method
+  b[2] = '-'  # []= method; element assignment, which is destructive 
 end
 
-my_value(a) # will return "-"
-puts a # will print "Xy-zy"
+p my_value(a) # method will return "Xy-zy"
+puts a  # prints "Xy-zy"
 
+# The my_value method initializes a local variable 'b'. When invoking the method on line 7 and passing in 'a' as an argument, the variable 'b' local to the method is bound to the same String object that 'a' references.
 
-# b is pointing to same string object as local variable a
-# String[]= method is accessing character at index 2, setting it to a new character, '-'
+# On line 4 of the my_value method, a destructive method is invoked - element assignment. Because 'b' points to the same object that 'a' points to, that object itself is mutated by invokign the my_value method. 
 
-# We are mutating the string pointed to by local variable 'a' with the destructive method String[]=.
-
-# Strings are mutable. On line 4, the method String#[]= is being called on the local variable b, which is a mutating method. 
-
-# When calling the my_value method on line 7 and passing in the string bound to the local variable 'a', the string referenced by 'a' is destructive by the String[]= method. 
-
+# Therefore, line 8 will output that mutated String object - "Xy-zy".
