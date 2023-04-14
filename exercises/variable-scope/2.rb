@@ -10,3 +10,5 @@ puts a  # will print 7
 # This code will output 7. Despite both variables having the same name of 'a', the variable 'a' initialized in the my_value method is a different variable local to the method. That local variable is being re-assigned on line 4 of the method, not the variable a initialized on line 1. 
 
 # Additionally, numbers are immutable in Ruby. There is no way to mutate the value of the local variable a initialized on line 1 from within the my_value method. 
+
+# from solution: could add - Methods have self-contained scope with local variables; the local variable a initialized on line 1 is not accessible within the method body. Similarly, the variable local to the method definition (a) is not accessible outside of the method body.
