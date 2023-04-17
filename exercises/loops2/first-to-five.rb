@@ -19,7 +19,5 @@ loop do
   if number_a == 5 || number_b == 5
     puts "5 was reached!"
     break
-  else
-    next
   end
 end
