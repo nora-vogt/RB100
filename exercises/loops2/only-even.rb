@@ -1,5 +1,3 @@
-# Using next, modify the code below so that it only prints positive integers that are even.
-
 number = 0
 
 until number == 10
@@ -8,8 +6,7 @@ until number == 10
   puts number
 end
 
-# Why did next have to be placed after the incrementation of number and before #puts?
+# Further Exploration
+# #next must be placed after incrementing, otherwise only 1 will be printed. on the first iteration, number would increment to 1, and the next would trigger on the second iteration, skipping the rest of the code in the block, making the loop run infinitely.
 
-# If the next was placed before the incrementation, number would be incremented and output to 1 on the first iteration. On the second iteration, the next would execute, exiting that iteration WITHOUT incrementing number to 2 or printing anything. This results in a frozen program - the loop can't finish executing.
-
-# If next were placed after the puts, then the odd numbers would still be printed. The next would skip to the next iteration when its already at the end of the code to be executed each time.
+# if the next statement were placed after the puts, the odd numbers would still be printed.
