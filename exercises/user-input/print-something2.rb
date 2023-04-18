@@ -10,3 +10,5 @@ loop do
 end
 
 puts "something" if input == 'y'
+
+# initialize the var that will be bound to user input outside of the loop; we will usually need to access this input outside of the loop
