@@ -26,11 +26,10 @@ loop do
   denominator = gets.chomp
 
   if denominator == "0"
-    puts ">> Invalid input. A denominator of 0 is not allowed."
-    next
-  elsif valid_number?(denominator)
-    break
-  else
+    puts ">> Invalid input. A denominator of 0 is not allowed." 
+    # don't need a next here. after executing the puts, ruby will exit the conditional statement and return to the start of the loop
+  else 
+    break if valid_number?(denominator)
     puts ">> Invalid input. Only integers are allowed."
   end
 end
