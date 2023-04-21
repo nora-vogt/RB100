@@ -7,5 +7,4 @@ def time_of_day(boolean)
 end
 
 daylight = [true, false].sample
-
 time_of_day(daylight)
