@@ -1,12 +1,8 @@
 def meal
-  return 'Breakfast'    # 'Breakfast' is the return value; explicit return immediately exits the method
-  'Dinner'    # line 3 is not executed after explicit return
-  puts 'Dinner'   # line 4 is not executed after explicit return
+  return 'Breakfast'  # returns 'Breakfast' and exits method
+  'Dinner'  # line is not executed
+  puts 'Dinner' # line is not executed
 end
 
 puts meal
-# 'Breakfast'
-
-# Line 2 of the meal method has an explicit return. The evaluated result of line 2 is the string 'Breakfast', so 'Breakfast' is the return value of the meal method. The explicit return exits the method, so lines 3 and 4 are not executed. 
-
-# The call to puts on line 7 will print the return result of the meal method - the string 'Breakfast'.
+# #puts will print the return value of the meal method, which is determined by the explicit return on line 2. An explicit return exits the method and returns the provided value, which is the string 'Breakfast'. This makes 'Breakfast' the return value of the meal method, and the code on lines 3 and 4 of the method is never executed.
