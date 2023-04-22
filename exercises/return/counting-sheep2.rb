@@ -1,11 +1,11 @@
 def count_sheep
-  5.times do |sheep|    # return value is 5, but will not be used
-    puts sheep    # will output numbers starting with 0..4 on each iteration.
+  5.times do |sheep|
+    puts sheep
   end
-  10    # 10 is the last evaluated line, becoming the implicit return value for the method
+  10
 end
 
-puts count_sheep    # first, count_sheep will output the values represented by sheep from the #puts call on line 3
+puts count_sheep
 # 0
 # 1
 # 2
@@ -13,5 +13,7 @@ puts count_sheep    # first, count_sheep will output the values represented by s
 # 4
 # 10
 
-# The numbers 0 - 4 will be output by the #puts call on line 3 in the count_sheep method from iterating with the #times method.
-# Then, the #puts call on line 8 will print the return value of the count_sheep method - the integer 10 on the last line of the method. 
+# First, 0 1 2 3 4 will be printed by calling the count_sheep method on line 8. Within the count_sheep method, the #times method will print the count five times, starting with zero. 
+
+# Next, the #puts call on line 8 will print the return value of the count sheep method. The integer 10 on line 5 is the the last evaluated line of the method, which makes 10 the return value of the method that will be printed.
+
