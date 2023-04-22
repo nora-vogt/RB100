@@ -1,17 +1,12 @@
 def meal
-  'Dinner'    # nothing happens with this line
-  puts 'Dinner'   # 'Dinner' will be printed, nil is return value of method from #puts
+  'Dinner'  # this line is essentially ignored
+  puts 'Dinner' # will print 'Dinner' and return nil
 end
 
-p meal    # p will print and return the return value of the object passed to it:
-# 'Dinner'
-# nil
+p meal    # p will print and return the return value of the object passed to it.
 
-# The string 'Dinner' is printed first, as this is the output from the #puts call on line 3 of the meal method. 
+# This will first print 'Dinner' by invoking the meal method, and executng the #puts call on line 3 of the method.
 
-# The p method will print the return value of the object passed to it (the meal method). The meal method's return value is nil, so nil is printed next. 
+# Next, the #p call on line 6 will print the return value of the meal method, which is nil. #puts returns nil, and the #puts call on line 3 is the last evaluated line of the meal method, which makes the meal method's return value nil.
 
-# If we were to run this code in IRB, we would also see the p call return the value nil - p returns the return value of the object passed to it, and the meal method's return value is nil. 
-
-
-
+# If we were to run this code in irb, we would also see the #p call return the value nil. #p prints and returns the value of the object passed to it, and the meal method's return value is nil.

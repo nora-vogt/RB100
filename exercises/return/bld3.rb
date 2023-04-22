@@ -1,9 +1,7 @@
-# Breakfast, Lunch, or Dinner? (Part 3)
-
 def meal
   return 'Breakfast'
   'Dinner'
 end
 
-puts meal   # will print 'Breakfast'. 
-# On line 2 of the meal method, there is an explicit return, and the evaluated result of that line is the string 'Breakfast'. The explicit return exits the method, so 'Breakfast' rather than 'Dinner' is the return value for the meal method. 
+puts meal
+# This will print 'Breakfast'. #puts will print the return value of the meal method. The return value of the meal method is specified on line 2 by the explicit return. The return keyword will return the value passed to it (the string 'Breakfast') and exit from the method, ignoring any subsequent lines of code within the method.
