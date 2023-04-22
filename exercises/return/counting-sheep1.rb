@@ -1,6 +1,6 @@
 def count_sheep
   5.times do |sheep|
-    puts sheep  # will print the index
+    puts sheep  # block parameter begins counting at zero
   end
 end
 
@@ -12,7 +12,7 @@ puts count_sheep
 #4
 #5
 
-# First, the count_sheep method will be invoked. Within the #times block there is a call to #puts - this will print the index five times, starting with 0:
+# First, the count_sheep method will be invoked. Within the #times block there is a call to #puts - this will print the count five times, starting with 0:
 # 0
 # 1
 # 2
