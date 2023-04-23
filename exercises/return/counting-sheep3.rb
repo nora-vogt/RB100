@@ -1,5 +1,5 @@
 def count_sheep
-  5.times do |sheep|
+  5.times do |sheep|    # last evaluated line of the method
     puts sheep    # prints count, starting at zero
     if sheep >= 2   # once sheep == 2, the conditional will execute
       return  # and return from the method. nothing is passed to the return, so this explicit return value is nil
