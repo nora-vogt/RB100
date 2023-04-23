@@ -2,7 +2,14 @@ stoplight = ['green', 'yellow', 'red'].sample
 
 
 case stoplight
-when 'green' then puts 'Go!'
+when 'green'  then puts 'Go!'
 when 'yellow' then puts 'Slow down!'
-when 'red' then puts 'Stop!'
+else               puts 'Stop!'
 end
+
+# If a when clause has multiple statements, best to stick with multi-line format. Ex:
+# case stoplight
+# when 'green'
+  # puts 'go'
+  # accelerate
+# etc...
