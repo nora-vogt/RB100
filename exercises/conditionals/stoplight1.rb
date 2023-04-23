@@ -1,10 +1,16 @@
 stoplight = ['green', 'yellow', 'red'].sample
 
 puts case stoplight
-      when 'green'
-        'Go!'
-      when 'yellow'
-        'Slow down!'
-      when 'red'
-        'Stop!'
-      end
+     when 'green' then 'Go!'
+     when 'yellow' then 'Slow down!'
+     when 'red' then 'Stop!'
+     end
+
+# case stoplight
+# when 'green'
+#   puts 'Go!'
+# when 'yellow'
+#   puts 'Slow down!'
+# else
+#   puts 'Stop!'
+# end
