@@ -1,9 +1,13 @@
 status = ['awake', 'tired'].sample
 
-result = if status == 'awake'
+action = if status == 'awake'
            'Be productive!'
          else
            'Go to sleep!'
          end
 
-puts result
+puts action
+
+# As a ternary - assigning a value to a variable
+alert = (status == 'awake' ? 'Be productive!' : 'Go to sleep!')
+puts alert
