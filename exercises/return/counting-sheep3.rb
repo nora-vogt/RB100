@@ -1,8 +1,8 @@
 def count_sheep
   5.times do |sheep|
-    puts sheep  # will print 0, 1, 2 by iterating
-    if sheep >= 2   # the conditional then evalutes to true
-      return   # the method returns, exiting the method. an explicit return will return the value provided to the keyword return. in this case, no value is provided, so the return value is nil. 
+    puts sheep    # prints count, starting at zero
+    if sheep >= 2   # once sheep == 2, the conditional will execute
+      return  # and return from the method. nothing is passed to the return, so this explicit return value is nil
     end
   end
 end
@@ -13,6 +13,4 @@ p count_sheep
 # 2
 # nil
 
-# the count_sheep method will output 0, 1, 2 before explicitly returning. 
-# the #p call on line 10 will print the return value of the count_sheep method, nil.
-# the p method call itself will also return nil.
+# First, 0 1 2 will be printed from the first iterations of  the #times method. On the third iteration, once the local var sheep has a value of 2, the conditional statement will evaluate to true and the explicit return on line 5 will execute. When there is no value passed to an explicit return, the method will return a value of nil. The call to #p on line 10 will then print the return value of the count_sheep method - nil.
