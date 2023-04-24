@@ -7,7 +7,3 @@ numbers = {
 numbers.each do |key, value|
   puts "A #{key} number is #{value}."
 end
-
-# takeaway
-  # Hash#each has two block parameteres - key, value
-  # return value is the calling hash
