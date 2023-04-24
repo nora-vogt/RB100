@@ -1,3 +1,4 @@
 state = 'tExAs'
 
-puts state.capitalize! # don't need to chain #downcase. String#capitalize converts first character of string to uppercase and the remainder to lowercase. #capitalize! is destructive.
+state.capitalize!   # String#capitalize! capitalizes first character, downcases the rest of characters; mutates the calling string.
+puts state
