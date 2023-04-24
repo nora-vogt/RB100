@@ -1,10 +1,9 @@
 colors = 'blue pink yellow orange'
 
-# refactored. #include? returns a boolean, so we can output the return value without a conditional statement
-puts colors.include?('yellow')  # true
-puts colors.include?('purple')  # false
+puts colors.include?('yellow')
+puts colors.include?('purple')
 
+# Further Exploration
 colors = 'blue boredom yellow'
-puts colors.include?('red')     # true
 
-# this will return true, because include? returns true if the calling string contains the argument string anywhere - not necessarily as its own word. in this case, 'red' is found within the calling string as part of the word 'boREDdom'.
+puts colors.include?('red') # this will print true. the characters 'red' can be found within the string referenced by the variable colors. String#include? checks if the given substring can be found anywhere in the calling string, not necessarily as a standalone word.

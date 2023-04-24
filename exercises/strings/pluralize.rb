@@ -1,6 +1,3 @@
 words = 'car human elephant airplane'
-
-words.split(" ").each do |word|
-  puts "#{word}s"
-end
-
+# don't need to save split words in a separate variable; can just chain #each to the #split call
+words.split(' ').each {|word| puts "#{word}s"}
