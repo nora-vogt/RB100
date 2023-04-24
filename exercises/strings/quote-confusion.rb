@@ -1,16 +1,7 @@
-puts 'It\'s now 12 o\'clock.' # It's now 12 o'clock.
-puts "It's now 12 o'clock." # It's now 12 o'clock.
+puts "It's now 12 o'clock."
 
-# Percent String: double quote
-puts %Q(It's now 12 \"o'clock.\") # It's now 12 "o'clock." - can escape, but not necessary
-puts %Q(It's now 12 "o'clock.") # It's now 12 "o'clock." - no escape needed
+# single quotes don't allow for escape sequences, except for escaping other single quotes \'. however, double-quotes are preferred in that situation. 
 
-# Percent String: single quote
-puts %q(It\'s now 12 o\'clock.) # It\'s now 12 o\'clock. - escape doesn't work
-puts %q(It's now 12 o'clock.)   # It's now 12 o'clock. - no escape needed
-
-# String Interpolation
-time = 12
-
-puts %q(It's now #{time} o'clock.) #It's now #{time} o'clock. String interpolation doesn't work.
-puts %Q(It's now #{time} o'clock.) # It's now 12 o'clock. String interpolation works
+# Further Exploration
+p %q(It's now 12 o'clock.)  # alternate syntax for single-quote strings; no escaping for single quotes appears to be needed
+p %Q("It's now 12 o'clock.") # Ruby will automatically escape the double quotes when printing & returning the string with #p. 
