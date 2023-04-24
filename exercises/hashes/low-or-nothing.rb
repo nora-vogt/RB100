@@ -5,14 +5,10 @@ numbers = {
 }
 
 low_numbers = numbers.select! do |key, value|
-                value < 25
-              end
+                 value < 25
+               end
 
 p low_numbers
-p numbers   # these two variables point to the same hash object
+p numbers
 
-puts low_numbers.object_id == numbers.object_id
-
-# takeaways:
-  # Hash#select! (#select with a bang operator) is a destructive method
-  # When using methods that mutate the caller, we don't typically need to assign the return value of the method to a new variable because the caller is intentionally being mutated. 
+# Further Exploration: Assigning the return value of calling #select! on the numbers hash isn't really necessary. By calling #select!, we are mutating the numbers hash itself, so there is no need for a second, aliased variable pointing to the same mutated Hash object.
